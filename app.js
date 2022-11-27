@@ -10,7 +10,7 @@ app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 
-app.get('/webapp', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index')
 });
 
